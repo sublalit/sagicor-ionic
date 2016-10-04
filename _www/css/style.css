@@ -1,0 +1,294 @@
+/* Empty. Add your own CSS if you like */
+
+@font-face {
+    font-family: Ubuntu Regular;
+    src: url(../fonts/Ubuntu-R.ttf);
+}
+@font-face {
+    font-family: Ubuntu medium;
+    src: url(../fonts/Ubuntu-M.ttf);
+}
+@font-face {
+    font-family: Ubuntu bold;
+    src: url(../fonts/Ubuntu-B.ttf);
+}
+body{padding: 0;margin: 0; font-family: Ubuntu Regular}
+input, button, select, textarea {
+    font-family: "-apple-system", Ubuntu Regular;
+}
+.family-bold{font-family: Ubuntu bold;}
+.clearfix{clear:both;}
+.padd-0{padding: 0!important}
+.padd-left-0{padding-left:0!important}
+.padd-right-0{padding-right: 0!important}
+.width-auto{width: auto!important; display: block;}
+.border-0{border: 0!important;}
+
+.loginBg{background: url('../img/login-bg.png') no-repeat 0 0; height:100%;  background-size: cover; /* <------ */ background-repeat: no-repeat;   background-position: center center; }
+.loginBg .item{background: none; border: 0px;}
+.loginBg .bar{background: none;}
+.LoginInput {background: #fff!important; padding:25px 5px!important; font-family: Ubuntu Regular; font-size: 18px!important;}
+.loginBg .button.button-positive{background: #5bc80d; border-radius: 0px; margin: 0px;  font-family: Ubuntu bold;
+    font-size: 20px; }
+.loginBg .bar-header{border-bottom-width: 0px;}
+.forgetRight{ max-width: 100%; text-align: right; width: 100%;}
+
+.loginMidBox{width:80%; margin: 80px auto 20px auto;}
+.loginBg .input-label {width:100%; max-width:100%; padding: 0px; color: #9fdcf5; font-size: 18px;  font-family: Ubuntu Regular;}
+.boderBotom{border-bottom: 1px solid #92c5d0; color:#fff; padding-bottom: 10px!important; font-size: 24px!important; font-weight: 700; color:#fff!important;}
+.loginBg h1.title{color:#fff; font-size: 30px;  font-family: Ubuntu bold;}
+.midBoder{border-top:1px solid #92c5d0; width:45%}
+.orText{padding:0px 8px; color:#fff;  font-family: Ubuntu bold; font-size: 18px;}
+.signUpButton {border:1px solid #92c5d0; width:99%; margin-top:15px; text-align: center; color:#fff; padding: 10px 0px; background: none; font-family: Ubuntu Regular; font-size: 20px}
+
+.bar.bar-stable {
+    border-color: #b2b2b2;
+    background-color: #2dacdb; 
+    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+    color: #fff;
+}
+.bar.bar-stable .title { color: #fff; font-family: Ubuntu Regular; font-size: 20px;}
+.bar-stable .button.button-clear { color: #fff;}
+.pageHeding{color: #2dacdb; font-family: Ubuntu bold; font-size: 20px; border-bottom: 1px solid #2da1cc; text-align: center; padding: 15px 0px;}
+.greenBoxHeding{color: #8bbf1a; font-family: Ubuntu bold; font-size: 20px; background: #f0f7e0;  padding: 15px 25px;}
+
+.smallGreyHeading { padding: 10px 25px; color: #666666}
+.greenTextLable{color: #2dacdb; font-family: Ubuntu bold; font-size: 16px;}
+.noteWraper{ font-family: Ubuntu bold; font-size: 14px; background: #e9eddf; padding: 7px 25px; color:#666666;}
+.noteWraper a.tooltip-color {
+    color: #949494;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.popup-head{display:none;}
+.popup-container .popup { width: 90%;}
+.closePopup{float:right; top: 0px; position: relative; cursor: pointer;}
+ul.popupList li{color:#546e7a; font-family: Ubuntu Regular; font-size: 15px; padding: 8px 0px 8px 35px;}
+ul.popupList li a{text-decoration: none; color: #546e7a}
+ul.popupList li a:hover{text-decoration: none; color: #2dacdb}
+ul.popupList li.firstImg{background: url('../img/infoIcon.png') no-repeat 0 7px; height:35px;}
+ul.popupList li.firstImg:hover{background: url('../img/infoIconH.png') no-repeat 0 7px;}
+ul.popupList li.secondImg{background: url('../img/view-detail.png') no-repeat 0 7px; height:35px;}
+ul.popupList li.secondImg:hover{background: url('../img/view-detailH.png') no-repeat 0 7px;}
+ul.popupList li.thirdImg{background: url('../img/view-billing.png') no-repeat 0 7px; height:35px;}
+ul.popupList li.thirdImg:hover{background: url('../img/view-billingH.png') no-repeat 0 7px;}
+
+
+.popUpHeding{color: #2dacdb; font-family: Ubuntu bold; font-size: 20px;  padding: 10px 0px; margin-top:0;}
+
+.popwidth{width:75%;float:left; }
+.popImgBox{width:20%;float:right; text-align: center}
+ul.card-listing.popwidth li span:first-child{width:75px;}
+ul.card-listing.popwidth li span:last-child { font-size: 16px; font-family: Ubuntu bold;}
+
+.billing-header-inner {   padding: 0px 20px;   float: left;   box-sizing: border-box; }
+.blueText{color:#2dacdb!important;}
+.cardGreyHeading {  padding: 10px 0px 0px 0px; color: #666666; font-size: 15px;}
+
+.menu {background: #ccc url('../img/slider-bg.gif') repeat-y left 0; height:100%;}
+.menu .item{background: none; color:#2dacdb; border-color:#2d4650;}
+.menu .item-complex .item-content, .item-radio .item-content{background: none;}
+.bar.bar-calm .title { font-size: 22px;}
+
+.progressbarWraper{background: #eff7e0;  padding: 7px 0px 5px 0px;}
+#progressbarHold {
+    width: 400px;
+    margin: 5px auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+   }
+/*progressbar*/
+#progressbar {
+	margin-bottom: 5px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: #91c32c;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 35px;
+	line-height: 35px;
+	display: block;
+	font-size: 14px;
+	color: #8cc11b;
+	background: #dae7bc;
+	border-radius: 50%;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #d9e6bb;
+	position: absolute;
+	left: -50%;
+	top: 15px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #8bc01a;
+	color: white;
+}
+
+.captchaClass{background: #f1eff0; font-size: 30px!important; text-align: center; color:#000!important; font-family: Ubuntu bold; border:1px solid #ccc;height:100px!important;}
+
+/*.scroll-content { background: #ccc url('../img/slider-bg.gif') repeat-y left 0; height:100%;}
+.scroll-content .item {  background: none;  color: #fff;}
+.scroll-content .item-complex .item-content, .item-radio .item-content {
+     background: none;
+}*/
+
+.insuranceList .item.item-stable { border-color: #b2b2b2;  background-color: #fff;  color: #2dacdb; font-family: 'Ubuntu medium';}
+.insuranceList .item.item-stable:hover { border-color: #b2b2b2;  background-color: #e9f9ff; }
+
+.insuranceList .item.active.item-stable, .item.activated.item-stable, .item-complex.active .item-content.item-stable, .item-complex.activated .item-content.item-stable, .item .item-content.active.item-stable, .item .item-content.activated.item-stable {
+    border-color: #a2a2a2;  background-color: #e9f9ff; font-weight:bold;
+}
+
+.insuranceList .badge.badge-assertive {
+    background-color: #608492; border-radius: 5px; font-family: Ubuntu bold; padding:5 10px!important;
+    color: #fff;
+}
+
+.item {color:#666;}
+.insuranceList .item {background-color: #e9f9ff;}
+.insuranceList .item.active  {background-color: #e9f9ff; border-width:0px!important;}
+ul.insuranceListing{margin-left:15px;}
+ul.insuranceListing li{float:left;width:50%;  font-family: Ubuntu bold;padding:7px 0px 0px 0px; height: 45px }
+ul.insuranceListing li.first{color:#0288d1;width:150px;  font-family: Ubuntu Regular;}
+.displayBlock{display:flex;}
+
+.insuranceList .ion-ios-arrow-right1{background: #ccc url('../img/arrow-left.png') no-repeat left 0; width:20px!important; float:left; border:0px;z-index: 999}
+
+.tabHolder{width:100%; margin:0px auto; padding-top:0px; background:#f0f7e0;}
+.tabHeading{display:inline-table; cursor:pointer;  background:#ebebeb; padding:15px 0px; color:#949494;  margin:0px 1px 0px 0px; border-bottom:5px solid #f0f7e0; font-size:22px; font-family: Ubuntu bold; width:48%; text-align: center;}
+.tabContent{float:left; border:0px solid; width:100%; padding:5px 0px; display:none; }
+.tabHolder .active{ background:#f0f7e0; color:#8bbf1a;}
+
+
+/**************/
+.clearfix{clear:both;}
+.card-info{width: 100%;padding: 35px 35px 25px 35px; background-color: #e8f9ff;box-sizing:border-box;}
+.card-inner{background-color: #fff;padding: 25px 30px;border-radius:10px;
+-webkit-box-shadow: 0px 0px 18px 0px rgba(120,165,181,0.35);
+-moz-box-shadow: 0px 0px 18px 0px rgba(120,165,181,0.35);
+box-shadow: 0px 0px 18px 0px rgba(120,165,181,0.35);}
+.card-inner-left{width: 40%;float: left;padding-right: 30px;border-right: 1px solid #e2e2e2;text-align: center;box-sizing:border-box}
+.card-inner-left img{width: 100%;max-width: 133px;}
+.card-inner-left p{color: #666666;font-size: 22px;font-family: Ubuntu bold}
+.card-inner-right{padding-left: 20px;float: left;box-sizing:border-box;width: 60%;}
+ul.card-listing{list-style: none;padding: 0	}
+ul.card-listing li{margin-bottom: 15px;}
+ul.card-listing li span:first-child{color: #2dacdb;font-size: 17px;width: 210px;display: inline-block;float: left;}
+ul.card-listing li span:last-child{color: #666666;font-size: 16px;font-family: Ubuntu bold; }
+.contact-info{background-color: #f0f7e0;padding: 30px 40px;}
+.contact-info p{font-size: 32px;color: #8bbf1a;font-family: Ubuntu bold;width: 100%;box-sizing:border-box;margin: 0}
+.form-main{padding: 30px 40px;background-color: #fff;}
+.form-main h2{color: #666666;font-size: 22px;font-family: Ubuntu bold}
+.form-note{color: #666666;font-size: 22px;line-height: 30px;}
+.please-note-text{font-family: Ubuntu medium;}
+.color-red{color: #ef3030;}
+.form label{font-size: 22px;color: #2dacdb;display: block;margin: 10px 0; font-family: Ubuntu medium;}
+input.input-style,select.input-style{width: 100%;height: 60px;border: 1px solid #c0c0c0;border-radius:0;margin-bottom: 10px;}
+.select-style{background: url('../img/select-icon.png') no-repeat right center #fff;appearance: none;-webkit-appearance: none;-moz-appearance: none;border-radius: 0;padding: 0;padding-right: 35px!important;text-overflow: ellipsis;min-width:80px;width: 100%;height: 60px;padding-left: 10px;}
+ select.select-style::-ms-expand {width:0;border:none;background:#fff;}
+.half-input .input-box{width: 50%;float: left;}
+.half-input .input-box:first-child{padding-right: 10px;box-sizing:border-box;}
+.line-devider{height: 2px;background-color: #c0c0c0;width: 100%;display: block;margin: 30px 0;}
+.form-note-bottom{font-size: 20px;color: #666666;margin: 0;margin-right: -30px;}
+.grid-btn{padding: 10px 25px;color: #2dacdb;border: 1px solid #2dacdb;text-align: center;font-size: 26px;background-color: #fff;}
+.grid-btn.active{background-color: #5bc80d;color: #fff;border: 1px solid #5bc80d;font-family: Ubuntu bold}
+.button-main{padding: 25px 0;}
+.button-main button{margin-right: 20px;}
+.add-button-main{padding: 15px 0;}
+.add-button-main a{text-decoration: none;color: #2dacdb;font-size: 20px;}
+
+ /*---Policy Details---*/
+ 
+ ul.policy-header-listing li span:first-child{width: 150px;font-size: 16px}
+ .policy-header-inner-left{width: 30%;float: left;text-align: center;box-sizing:border-box;border-left: 1px solid #e2e2e2;margin-bottom: 15px;}
+.policy-header-inner-left img{width: 100%;max-width: 60px;}
+.policy-header-inner-left p{color: color: #2dacdb;font-size: 16px;font-family: Ubuntu bold}
+.policy-header-inner-left a{display: block;color: #2dacdb;text-decoration: none;outline: 0;}
+.policy-header-inner-left a:focus{outline: 0;}
+.policy-header-inner-right{padding-left: 20px;float: left;box-sizing:border-box;width:70%;}
+.policy-header-top{padding: 14px 20px 0px 20px;background-color: #fafafa;margin-bottom: 15px}
+.update-personal{padding: 0 30px;border-top:1px solid #c0c0c0}
+.policy-current-date{font-size: 16px;}
+.policy-modal-header{color: #2dacdb;font-size: 22px;font-family: Ubuntu bold}
+.policy-info{padding: 30px 25px;background-color: #fff;}
+.policy-info ul.card-listing li span:first-child{width: 190px;}
+ul.card-listing li a.tooltip-color{color: #949494;margin-left: 10px;text-decoration: none;}
+.hundred-round{font-size: 20px;color: #666666;background-color: #eaeaea;text-align: center;height: 63px;width: 63px;border-radius:50%;line-height: 63px;font-family: Ubuntu bold}
+
+/*media query*/
+
+@media (min-width: 500px) and (max-width: 600px) {
+   
+   
+  }
+
+@media ( max-width: 400px ){
+   .card-info { padding: 20px;}
+   .card-inner-left p {
+    font-family: Ubuntu bold;
+    font-size: 18px;
+}
+
+.contact-info p {
+      font-size: 28px;
+  }
+  .grid-btn {
+       padding: 15px 20px;
+    }
+
+ .tabHeading{padding:15px 15px;  font-size:20px; }
+ .policy-current-date { font-size: 13px; color:#666}
+ .add-button-main a { font-size: 18px;}
+ .policy-header-inner-left p {  font-size: 14px;}
+ .tabHeading{  font-size: 16px;}
+ ul.card-listing li span:first-child{font-size: 15px; }
+ul.card-listing.popwidth li span:last-child {
+    font-size: 12px;
+    font-family: Ubuntu Regular;
+}
+ 
+  }
+
+div.dataTables_wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+#example_length,
+#example_filter,
+#example_info,
+#example_paginate {display:none;}
+
+table.dataTable thead th {background:#a3d140; color:#fff; border-right:1px solid #fff; border-bottom:none;}
+#example tbody tr td:first-child {color:#3ab1dd;}
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {background:#f5f8ed;}
+table.dataTable.row-border tbody tr:first-child th, table.dataTable.row-border tbody tr:first-child td, table.dataTable.display tbody tr:first-child th, table.dataTable.display tbody tr:first-child td {border-right:1px solid #aeda4f;}
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr td {border-right:1px solid #aeda4f; font-weight:bold; color:#666;}
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {border:none}
+
+/*lalit*/

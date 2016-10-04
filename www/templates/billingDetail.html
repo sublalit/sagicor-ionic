@@ -1,0 +1,219 @@
+<ion-view view-title="Billing/Payment Detail" ng-init="currentab=1; retrieve=1">
+  <ion-content>
+    <!--<h1>policyDetail</h1>-->
+
+    <section>
+		<div class="card-info">
+			<div class="card-inner padd-0">
+			<div class="policy-header-top">
+			<div class="row">
+			<div class="col-sm-7">
+			<ul class="card-listing policy-header-listing">
+				<li><span>Policy Number:</span><span class="width-auto">S0000305007</span></li>				
+			</ul>
+			</div>
+			<div class="col-sm-5 padd-left-0">
+				<div class="policy-current-date">
+					<span>Current As Of Date <br/><span class="family-bold">08/30/2016</span></span>
+				</div>
+			</div>
+			</div>
+			</div>				
+				<div class="billing-header-inner">
+					<ul class="card-listing policy-header-listing">
+						<li>
+						<span>Payor:</span> <span class="blueText">NORMA U HERRON
+<a href="#" data-toggle="tooltip" data-placement="top" title="NORMA U HERRON" ><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+						</span>
+						</li>
+						<li>
+						<span >Effective Date:</span><span>08/23/2012 </span>
+						</li>
+						<li>
+						<span>Paid To Date:</span><span>08/23/2012 </span>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+			<div class="cardGreyHeading">All currency values expressed in DOLLAR (US)</div>
+		</div>
+
+
+<div class="tabHolder">
+<div class="tabHeading" ng-click="currentab = 1" ng-class="{active: currentab === 1}">Payment Information</div>
+<div class="tabContent" ng-show="currentab === 1">
+
+		<div class="policy-info" >
+			<ul class="card-listing">
+				<li>
+				<span>Bill Date:<a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!" class="tooltip-color"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span><span>08/13/2012</span>
+				</li>
+				<li>
+				<span>Premium:</span><span>$ 80,000.00</span>
+				</li>
+				<li>
+				<span>Payment Frequency:<a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!" class="tooltip-color"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span><span>Annual</span>
+				</li>
+				<li>
+				<span>Payment Method:<a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!" class="tooltip-color"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span><span>No Notice</span>
+				</li>
+			</ul>
+			
+		</div>
+</div>
+
+
+
+<div class="tabHeading" ng-click="currentab = 2" ng-class="{active: currentab === 2}">Payment History</div>
+<div class="tabContent paymentContent" ng-hide="currentab === 1">
+
+<div>
+	<div style="width:50%; float:left; margin: 0px;
+    padding: 0px;color:#11c1f3;">
+		<label>From Date:</label>
+	</div>
+	<div style="width:50%; float:left; margin: 0px;
+    padding: 0px; color:#11c1f3;">
+		<label>Through Date:</label>
+	</div>
+</div>
+<div >
+	<div style="width:50%; float:left; margin: 0px;
+    padding: 0px;" class="card">
+
+			<label class="item item-input">
+	          <input type="text" 
+	          placeholder="Pick date" 
+	          ng-model="datepicker" 
+	          name="datepicker" 
+	          ng-click="opendateModal()" 
+	          readonly>
+	           <i class="ion-calendar ion-icon-right" ng-style="margin:10px"></i> 
+	        </label>
+	     
+	    </div>
+	    <div style="width:50%; float:left;     margin: 0px;
+    padding: 0px;" class="card">
+
+			<label class="item item-input">
+	          <input type="text" 
+	          placeholder="Pick date" 
+	          ng-model="datepicker" 
+	          name="datepicker" 
+	          ng-click="opendateModal()" 
+	          readonly>
+	           <i class="ion-calendar ion-icon-right" ng-style="margin:10px"></i> 
+	        </label>
+	     
+	    </div>
+</div>
+<div class="retrieveBtn">
+	<button class="button button-balanced" ng-click="retrieve = 2">Retrieve</button>
+</div>
+<!-- <div ng-hide="retrieve === 1">
+	<table id="example" class="display nowrap" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+                <th>Extn.</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tiger</td>
+                <td>Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>5421</td>
+                <td>t.nixon@datatables.net</td>
+            </tr>
+            <tr>
+                <td>Cedric</td>
+                <td>Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+                <td>6224</td>
+                <td>c.kelly@datatables.net</td>
+            </tr>
+            <tr>
+                <td>Airi</td>
+                <td>Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+                <td>5407</td>
+                <td>a.satou@datatables.net</td>
+            </tr>
+            <tr>
+                <td>Jonas</td>
+                <td>Alexander</td>
+                <td>Developer</td>
+                <td>San Francisco</td>
+                <td>30</td>
+                <td>2010/07/14</td>
+                <td>$86,500</td>
+                <td>8196</td>
+                <td>j.alexander@datatables.net</td>
+            </tr>
+            <tr>
+                <td>Shad</td>
+                <td>Decker</td>
+                <td>Regional Director</td>
+                <td>Edinburgh</td>
+                <td>51</td>
+                <td>2008/11/13</td>
+                <td>$183,000</td>
+                <td>6373</td>
+                <td>s.decker@datatables.net</td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>Bruce</td>
+                <td>Javascript Developer</td>
+                <td>Singapore</td>
+                <td>29</td>
+                <td>2011/06/27</td>
+                <td>$183,000</td>
+                <td>5384</td>
+                <td>m.bruce@datatables.net</td>
+            </tr>
+            <tr>
+                <td>Donna</td>
+                <td>Snider</td>
+                <td>Customer Support</td>
+                <td>New York</td>
+                <td>27</td>
+                <td>2011/01/25</td>
+                <td>$112,000</td>
+                <td>4226</td>
+                <td>d.snider@datatables.net</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+</div>
+
+
+</div>
+
+
+	</section>
+  </ion-content>
+</ion-view>

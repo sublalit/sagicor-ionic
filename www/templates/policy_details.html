@@ -1,0 +1,24 @@
+<ion-view class="list-text" view-title="policydetails">	
+	<ion-content scroll="false">
+  <div>
+    <ion-scroll direction="xy">
+        <div class="row header">
+          <div class="col">Product Name fdfsdsf</div>
+          <div class="col">Insured fvsffsd</div>
+          <div class="col">Status fsdfs</div>
+          <div class="col">Effective Date dfsd</div>
+          <div class="col">Covergae Date</div>
+        </div>
+        <div class="row" ng-repeat="data in ctrl">
+          <div class="col">{{data.product_name}}</div>
+          <div class="col">{{data.insured}}</div>
+          <div class="col">{{data.status}}</div>
+          <div class="col">{{data.effective_date}}</div>
+          <div class="col">{{data.coverage_date}}</div>
+        </div>  
+  </ion-scroll>    
+  </div> 
+		
+	</ion-content>
+
+</ion-view>

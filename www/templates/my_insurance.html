@@ -1,0 +1,77 @@
+	<ion-view  view-title="My Insurance">
+
+	<ion-nav-bar class="bar bar-header bar-calm">
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right" style="display:block;">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+	  <ion-content class="insuranceList">
+	    <ion-list>
+	    <div ng-repeat="playlist in playlists"> 
+	    	<ion-item class="item-stable list-text"
+                    ng-click="toggleGroup(playlist)"
+                    ng-class="{active: isGroupShown(playlist)}">
+                    <span class="icon" ng-class="isGroupShown(playlist) ? 'fa fa-angle-double-down': 'fa fa-angle-double-right'"></span>
+
+                    <span class="badge badge-assertive badge-color" ng-click="showPopup()" ng-show="isGroupShown(playlist)">I would Like to...</span>
+	        {{playlist.name}}
+
+
+
+        <div class="item-accordion" ng-show="isGroupShown(playlist)">
+          
+             <div ng-bind-html="renderhtml">
+              
+            </div>
+
+        </div>
+
+
+	      </ion-item>
+	     <!--  <ion-item class="item-accordion"
+                    ng-show="isGroupShown(playlist)">
+
+            <div ng-bind-html="renderhtml">
+            	
+            </div>
+          </ion-item> -->
+	    </div>
+	    </ion-list>
+	  </ion-content>
+	</ion-view>
+
+
+
+	<!-- <ion-view  view-title="My Insurance">
+
+	<ion-nav-bar class="bar bar-header bar-calm">
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right" style="display:block;">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+	  <ion-content>
+	    <ion-list>
+	    <div ng-repeat="playlist in playlists"> 
+	    	<ion-item class="item-stable list-text"
+                    ng-click="toggleGroup(playlist)"
+                    ng-class="{active: isGroupShown(playlist)}"  >
+                    <span class="icon" ng-class="isGroupShown(playlist) ? 'ion-ios-arrow-down': 'ion-ios-arrow-right'"></span>
+
+                    <span class="badge badge-assertive badge-color" ng-click="showPopup()" ng-show="isGroupShown(playlist)">I would Like to</span>
+	        {{playlist.name}}
+	      </ion-item>
+	      <ion-item class="item-accordion"
+                    ng-show="isGroupShown(playlist)">
+
+            <div ng-bind-html="renderhtml">
+            	
+            </div>
+          </ion-item>
+	    </div>
+	    </ion-list>
+	  </ion-content>
+	</ion-view> -->

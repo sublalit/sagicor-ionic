@@ -1,0 +1,24 @@
+	<ion-view  view-title="My Insurance">
+
+	  <ion-content class="insuranceList">
+	    <ion-list>
+	    <div ng-repeat="playlist in playlists"> 
+	    	<ion-item class="item-stable list-text"
+                    ng-click="toggleGroup(playlist)"
+                    ng-class="{active: isGroupShown(playlist)}"  >
+                    <span class="icon" ng-class="isGroupShown(playlist) ? 'fa fa-angle-double-down': 'fa fa-angle-double-right'"></span>
+
+                    <span class="badge badge-assertive badge-color" ng-click="showPopup()" ng-show="isGroupShown(playlist)">I would Like to</span>
+	        {{playlist.name}}
+	      </ion-item>
+	      <ion-item class="item-accordion"
+                    ng-show="isGroupShown(playlist)">
+
+            <div ng-bind-html="renderhtml">
+            	
+            </div>
+          </ion-item>
+	    </div>
+	    </ion-list>
+	  </ion-content>
+	</ion-view>
